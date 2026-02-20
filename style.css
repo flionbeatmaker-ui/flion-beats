@@ -1,0 +1,329 @@
+:root{
+--bg:#0f1c2e;
+--card:#16263d;
+--accent:#b1453b;
+--hover:#d65a4f;
+--text:#f1e4c3;
+}
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+}
+
+.nav-logo{
+width:120px;
+}
+
+.nav-btn{
+background:var(--accent);
+padding:8px 15px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.nav-btn:hover{
+background:var(--hover);
+}
+
+.hero{
+padding:80px 20px 60px 20px;
+text-align:center;
+}
+
+.main-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:var(--accent);
+color:white;
+border-radius:8px;
+text-decoration:none;
+transition:.3s;
+}
+
+.main-btn:hover{
+background:var(--hover);
+transform:scale(1.05);
+}
+
+.beats-page{
+padding:40px;
+}
+
+.top-controls{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:15px;
+margin-bottom:30px;
+}
+
+#searchInput{
+padding:10px;
+border-radius:6px;
+border:none;
+width:200px;
+}
+
+.cart-box{
+background:var(--card);
+padding:10px 15px;
+border-radius:8px;
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.beats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.beat-card{
+background:var(--card);
+padding:15px;
+border-radius:12px;
+text-align:center;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.beat-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.beat-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.beat-card button{
+background:var(--accent);
+border:none;
+padding:8px 15px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+transition:.3s;
+}
+
+.beat-card button:hover{
+background:var(--hover);
+}
+
+.reset-btn{
+background:#555;
+}
+
+audio{
+width:100%;
+margin-top:10px;
+}
+
+.filter-buttons{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.filter-buttons button{
+background:#1f3a5f;
+border:none;
+padding:6px 12px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.filter-buttons button:hover{
+background:#b1453b;
+transform:scale(1.05);
+}
+
+.about{
+padding:100px 8%;
+background:#0b0b0b;
+display:flex;
+justify-content:center;
+}
+
+.about-container{
+max-width:1200px;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:80px;
+}
+
+.about-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.about-image img{
+width:280px;
+border-radius:15px;
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+.about-text{
+flex:1;
+max-width:550px;
+}
+
+.about-text h2{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.about-text p{
+line-height:1.6;
+margin-bottom:15px;
+color:#ddd;
+}
+@media (max-width:900px){
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-text{
+max-width:100%;
+}
+}
+.beat-info{
+display:flex;
+justify-content:center;
+gap:15px;
+margin:8px 0;
+font-size:14px;
+color:#f1e4c3;
+background:rgba(255,255,255,0.05);
+padding:6px;
+border-radius:6px;
+}
+
+.beat-info span{
+opacity:0.9;
+}
+.contact-section{
+padding:100px 8%;
+max-width:600px;
+margin:auto;
+text-align:center;
+}
+
+.contact-sub{
+margin-bottom:30px;
+color:#ccc;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+form input, form select, form textarea{
+padding:10px;
+border-radius:6px;
+border:none;
+background:#16263d;
+color:white;
+}
+
+.contact-buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+margin-top:10px;
+}
+
+.contact-buttons button{
+background:#b1453b;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact-buttons button:hover{
+background:#d65a4f;
+transform:scale(1.05);
+}
+.checkout{
+padding:100px 8%;
+max-width:800px;
+margin:auto;
+text-align:center;
+}
+
+.resumen{
+margin-bottom:30px;
+}
+
+.pasos{
+text-align:left;
+margin:30px 0;
+background:#16263d;
+padding:20px;
+border-radius:10px;
+}
+
+.metodos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin:30px 0;
+}
+
+.metodo{
+background:#16263d;
+padding:20px;
+border-radius:12px;
+}
+
+.qr{
+width:180px;
+margin-top:10px;
+}
+
+.correo-box button{
+background:#b1453b;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.correo-box button:hover{
+background:#d65a4f;
+transform:scale(1.05);
+}

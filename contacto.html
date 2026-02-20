@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producción EP / Álbum - Flion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <img src="img/Flion.png" class="nav-logo">
+    <a href="index.html" class="nav-btn">Inicio</a>
+</header>
+
+<section class="contact-section">
+
+<h1>Producción Musical</h1>
+<p class="contact-sub">Cuéntame tu proyecto y trabajemos juntos 🔥</p>
+
+<form id="formProyecto">
+
+<label>Tipo de Proyecto</label>
+<select id="tipo">
+<option value="EP">EP (4 - 6 canciones)</option>
+<option value="Album">Álbum (8 - 12 canciones)</option>
+</select>
+
+<label>Nombre Artístico</label>
+<input type="text" id="artista" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Género Musical</label>
+<select id="genero">
+<option>Reggaeton</option>
+<option>Trap</option>
+<option>Rap</option>
+<option>R&B</option>
+<option>AfroBeat</option>
+<option>Dancehall</option>
+</select>
+
+<label>Cuéntame tu idea</label>
+<textarea id="mensaje" rows="4" required></textarea>
+
+<div class="contact-buttons">
+<button type="button" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+<button type="button" onclick="enviarCorreo()">Enviar por Correo</button>
+</div>
+
+</form>
+
+</section>
+
+<script src="contacto.js"></script>
+
+</body>
+</html>

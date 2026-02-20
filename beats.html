@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beats - Flion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <img src="img/Flion.png" class="nav-logo">
+    <a href="index.html" class="nav-btn">Inicio</a>
+</header>
+
+<section class="beats-page">
+
+<div class="top-controls">
+
+<input type="text" id="searchInput" placeholder="Buscar género...">
+
+<div class="filter-buttons">
+<button onclick="filtrarGenero('todos')">Todos</button>
+<button onclick="filtrarGenero('reggaeton')">Reggaeton</button>
+<button onclick="filtrarGenero('trap')">Trap</button>
+<button onclick="filtrarGenero('rap')">Rap</button>
+<button onclick="filtrarGenero('R&B')">R&B</button>
+<button onclick="filtrarGenero('AfroBeat')">AfroBeat</button>
+<button onclick="filtrarGenero('Dancehall')">Dancehall</button>
+</div>
+
+<div class="cart-box">
+🛒 <span id="cart-count">0</span> | $<span id="cart-total">0</span>
+<button onclick="pagarCarrito()">Pagar</button>
+<button onclick="resetCatalogo()" class="reset-btn">Reset</button>
+</div>
+
+</div>
+
+<div class="beats-grid">
+
+<!-- ================= REGGAETON ================= -->
+
+<div class="beat-card" data-id="reg1" data-genero="reggaeton">
+<img src="beats/reggaeton/cover1.jpg">
+<h3>Bababy</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat1.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg1','Bababy')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg2" data-genero="reggaeton">
+<img src="beats/reggaeton/cover2.jpg">
+<h3>Bellaqueando</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 F Minor</span>
+<span>🥁 92 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat2.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg2','Bellaqueando')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg3" data-genero="reggaeton">
+<img src="beats/reggaeton/cover3.jpg">
+<h3>Dame más</h3>
+<p class="genero">Dame Más</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat3.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg3','Dame más')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg4" data-genero="reggaeton">
+<img src="beats/reggaeton/cover4.jpg">
+<h3>DarkTTon</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 F Minor</span>
+<span>🥁 92 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat4.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg4','DarkTTon')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg5" data-genero="reggaeton">
+<img src="beats/reggaeton/cover5.jpg">
+<h3>FastPerreo</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat5.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg5','FastPerreo')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg6" data-genero="reggaeton">
+<img src="beats/reggaeton/cover6.jpg">
+<h3>Flow2</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 F Minor</span>
+<span>🥁 92 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat6.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg6','Flow2')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg7" data-genero="reggaeton">
+<img src="beats/reggaeton/cover7.jpg">
+<h3>No Pare</h3>
+<p class="genero">Dame Más</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat7.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg7','No Pare')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg8" data-genero="reggaeton">
+<img src="beats/reggaeton/cover8.jpg">
+<h3>Perreando</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 F Minor</span>
+<span>🥁 92 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat8.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg8','Perreando')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg9" data-genero="reggaeton">
+<img src="beats/reggaeton/cover9.jpg">
+<h3>Ponte Bebé</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat9.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg9','Ponte Bebé')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg10" data-genero="reggaeton">
+<img src="beats/reggaeton/cover10.jpg">
+<h3>Prendido´s</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 F Minor</span>
+<span>🥁 92 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat10.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg10','Prendido´s')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg11" data-genero="reggaeton">
+<img src="beats/reggaeton/cover11.jpg">
+<h3>Que Bien Te Ves</h3>
+<p class="genero">Dame Más</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat11.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg11','Que Bien Te Ves')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg12" data-genero="reggaeton">
+<img src="beats/reggaeton/cover12.jpg">
+<h3>Trampa</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 F Minor</span>
+<span>🥁 92 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat12.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg12','Trampa')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="reg13" data-genero="reggaeton">
+<img src="beats/reggaeton/cover13.jpg">
+<h3>Uy!</h3>
+<p class="genero">Reggaeton</p>
+<div class="beat-info">
+<span>🎼 D Minor</span>
+<span>🥁 95 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/reggaeton/beat13.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('reg13','Uy!')">Comprar $10</button>
+</div>
+
+<!-- ================= TRAP ================= -->
+
+<div class="beat-card" data-id="trap1" data-genero="trap">
+<img src="beats/trap/cover1.jpg">
+<h3>Flau Trap</h3>
+<p class="genero">Trap</p>
+<div class="beat-info">
+<span>🎼 C Minor</span>
+<span>🥁 140 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/trap/beat1.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('trap1','Flau Trap')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="trap2" data-genero="trap">
+<img src="beats/trap/cover2.jpg">
+<h3>Fuera De Lugar</h3>
+<p class="genero">Trap</p>
+<div class="beat-info">
+<span>🎼 A Minor</span>
+<span>🥁 145 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/trap/beat2.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('trap2','Fuera De Lugar')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="trap3" data-genero="trap">
+<img src="beats/trap/cover3.jpg">
+<h3>Inter_Trap</h3>
+<p class="genero">Trap</p>
+<div class="beat-info">
+<span>🎼 C Minor</span>
+<span>🥁 140 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/trap/beat3.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('trap1','Inter_Trap')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="trap4" data-genero="trap">
+<img src="beats/trap/cover4.jpg">
+<h3>Tu Dale</h3>
+<p class="genero">Trap</p>
+<div class="beat-info">
+<span>🎼 A Minor</span>
+<span>🥁 145 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/trap/beat4.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('trap2','Tu Dale')">Comprar $10</button>
+</div>
+
+<!-- ================= RAP ================= -->
+
+<div class="beat-card" data-id="rap1" data-genero="rap">
+<img src="beats/rap/cover1.jpg">
+<h3>Melancolihc</h3>
+<p class="genero">Rap</p>
+<div class="beat-info">
+<span>🎼 G Minor</span>
+<span>🥁 88 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/rap/beat1.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('rap1','Melancolihc')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="rap2" data-genero="rap">
+<img src="beats/rap/cover2.jpg">
+<h3>Palabra</h3>
+<p class="genero">Rap</p>
+<div class="beat-info">
+<span>🎼 E Minor</span>
+<span>🥁 90 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/rap/beat2.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('rap2','Palabra')">Comprar $10</button>
+</div>
+
+<!-- ================= R&B ================= -->
+
+<div class="beat-card" data-id="rb1" data-genero="R&B">
+<img src="beats/R&B/cover1.jpg">
+<h3>Lento</h3>
+<p class="genero">R&B</p>
+<div class="beat-info">
+<span>🎼 Bb Minor</span>
+<span>🥁 75 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/R&B/beat1.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('rb1','Lento')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="rb2" data-genero="R&B">
+<img src="beats/R&B/cover2.jpg">
+<h3>Ven Bebe</h3>
+<p class="genero">R&B</p>
+<div class="beat-info">
+<span>🎼 F Major</span>
+<span>🥁 78 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/R&B/beat2.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('rb2','Ven Bebe')">Comprar $10</button>
+</div>
+
+<!-- ================= AFROBEAT ================= -->
+
+<div class="beat-card" data-id="afro1" data-genero="AfroBeat">
+<img src="beats/AfroBeat/cover1.jpg">
+<h3>Igual Al Mar</h3>
+<p class="genero">AfroBeat</p>
+<div class="beat-info">
+<span>🎼 A Major</span>
+<span>🥁 102 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/AfroBeat/beat1.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('afro1','Igual Al Mar')">Comprar $10</button>
+</div>
+
+<div class="beat-card" data-id="afro2" data-genero="AfroBeat">
+<img src="beats/AfroBeat/cover2.jpg">
+<h3>Morena</h3>
+<p class="genero">AfroBeat</p>
+<div class="beat-info">
+<span>🎼 D Major</span>
+<span>🥁 105 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/AfroBeat/beat2.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('afro2','Morena')">Comprar $10</button>
+</div>
+
+<!-- ================= DANCEHALL ================= -->
+
+<div class="beat-card" data-id="dance1" data-genero="Dancehall">
+<img src="beats/dancehall/cover1.jpg">
+<h3>Braila</h3>
+<p class="genero">Dancehall</p>
+<div class="beat-info">
+<span>🎼 C Major</span>
+<span>🥁 98 BPM</span>
+</div>
+<audio controls controlsList="nodownload noplaybackrate" oncontextmenu="return false;">
+<source src="beats/dancehall/beat1.mp3" type="audio/mpeg">
+</audio>
+<button onclick="agregarAlCarrito('dance1','Braila')">Comprar $10</button>
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
