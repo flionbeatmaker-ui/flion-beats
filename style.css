@@ -327,3 +327,16 @@ transition:.3s;
 background:#d65a4f;
 transform:scale(1.05);
 }
+.entrega-info{
+margin-top:30px;
+background:#16263d;
+padding:20px;
+border-radius:12px;
+text-align:left;
+}
+.entrega-info ul{
+margin-top:10px;
+}
+.entrega-info li{
+margin-bottom:6px;
+}
