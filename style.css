@@ -494,3 +494,10 @@ body {
     }
 
 }
+.cart-box {
+  position: fixed;   /* hace que siga la pantalla */
+  top: 50px;         /* distancia desde arriba */
+  right: 20px;       /* lado derecho */
+  z-index: 1000;     /* lo pone encima de todo */
+   border-radius: 30px; /* forma ovalada */
+}
