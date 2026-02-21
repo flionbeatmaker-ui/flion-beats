@@ -240,6 +240,35 @@ flex-direction:column;
 text-align:center;
 }
 
+.contenido-section {
+    padding: 100px 20%;
+    text-align: center;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.video-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.03);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
 .about-text{
 max-width:100%;
 }
@@ -442,6 +471,7 @@ body {
     .nav-logo {
         width: 90px;
     }
+    
 
     nav {
         position: fixed;
