@@ -40,3 +40,27 @@ if(menuToggle){
         navbar.classList.toggle("active");
     });
 }
+const closeMenu = document.getElementById("close-menu");
+
+if(menuToggle){
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.add("active");
+    });
+}
+
+if(closeMenu){
+    closeMenu.addEventListener("click", () => {
+        navbar.classList.remove("active");
+    });
+}
+
+// Cerrar si toca fuera del menú
+document.addEventListener("click", (e) => {
+    if (
+        navbar.classList.contains("active") &&
+        !navbar.contains(e.target) &&
+        !menuToggle.contains(e.target)
+    ) {
+        navbar.classList.remove("active");
+    }
+});
