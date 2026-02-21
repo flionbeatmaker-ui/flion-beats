@@ -412,17 +412,8 @@ margin-bottom:6px;
     position: relative;
 }
 
-/* Efecto línea debajo */
-.nav-menu a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #00ffaa;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
+
+
 
 .nav-menu a:hover {
     color: #00ffaa;
@@ -445,54 +436,20 @@ body {
 @media (max-width: 768px) {
     .nav-menu {
         gap: 15px;
-        font-size: 14px;
+        font-size: 5px;
     }
 
     .nav-logo {
         width: 90px;
     }
-}
-
-/* ===== MENU MOVIL ===== */
-
-.menu-toggle {
-    display: none;
-}
-
-/* Solo en celular */
-/* ===== MENU HAMBURGUESA MOVIL ===== */
-
-.menu-toggle {
-    display: none;
-}
-
-.close-menu {
-    display: none;
-}
-
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
-        color: white;
-        position: absolute;
-        top: 40px;
-        right: 40px;
-        z-index: 1100;
-    }
 
     nav {
         position: fixed;
         top: 0;
-        right: -300px; /* oculto por defecto */
+        left: 140px;
         width: 250px;
-        height: 100vh;
-        background: #111;
-        flex-direction: column;
+        height: 50vh;
         padding: 60px 20px;
-        transition: 0.4s ease;
         z-index: 1000;
     }
 
@@ -502,21 +459,8 @@ body {
 
     nav a {
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 13px;
         color: white;
     }
 
-    nav a:hover {
-        color: #00f7ff;
-    }
-
-    .close-menu {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 22px;
-        cursor: pointer;
-        color: white;
-    }
 }

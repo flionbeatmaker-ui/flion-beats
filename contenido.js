@@ -36,29 +36,3 @@ shuffle(videos).forEach(video => {
     container.appendChild(card);
 });
 
-const menuToggle = document.getElementById("menu-toggle");
-const navbar = document.getElementById("navbar");
-const closeMenu = document.getElementById("close-menu");
-
-if(menuToggle){
-    menuToggle.addEventListener("click", () => {
-        navbar.classList.add("active");
-    });
-}
-
-if(closeMenu){
-    closeMenu.addEventListener("click", () => {
-        navbar.classList.remove("active");
-    });
-}
-
-// Cerrar menú al tocar fuera
-document.addEventListener("click", (e) => {
-    if (
-        navbar.classList.contains("active") &&
-        !navbar.contains(e.target) &&
-        !menuToggle.contains(e.target)
-    ) {
-        navbar.classList.remove("active");
-    }
-});
