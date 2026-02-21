@@ -25,7 +25,7 @@ backdrop-filter:blur(10px);
 /* ===== CONTENIDO ===== */
 
 .contenido-section {
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -494,7 +494,6 @@ body {
     }
 
     .cart-box {
-    z-index: 1000;     /* lo pone encima de todo */
     border-radius: 30px; /* forma ovalada */
     padding: 5px;
     }
@@ -509,7 +508,6 @@ body {
     }
 
 .cart-box {
-  z-index: 1000;     /* lo pone encima de todo */
    border-radius: 30px; /* forma ovalada */
    left: 300px;
 }
