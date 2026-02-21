@@ -31,3 +31,12 @@ Gracias.`;
 
 window.location.href = `mailto:flionbeatmaker@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
 }
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector("nav");
+
+if(menuToggle){
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+}

@@ -35,3 +35,12 @@ shuffle(videos).forEach(video => {
     card.appendChild(iframe);
     container.appendChild(card);
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector("nav");
+
+if(menuToggle){
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+}
