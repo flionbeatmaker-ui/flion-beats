@@ -462,7 +462,7 @@ body {
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     .nav-menu {
         gap: 15px;
         font-size: 5px;
@@ -493,11 +493,23 @@ body {
         color: white;
     }
 
-}
+    .cart-box {
+    z-index: 1000;     /* lo pone encima de todo */
+    border-radius: 30px; /* forma ovalada */
+    padding: 5px;
+    }
+
+    #searchInput{
+    padding:10px;
+    border-radius:6px;
+    border:none;
+    width:150px;
+    }
+
+    }
+
 .cart-box {
-  position: fixed;   /* hace que siga la pantalla */
-  top: 50px;         /* distancia desde arriba */
-  right: 20px;       /* lado derecho */
   z-index: 1000;     /* lo pone encima de todo */
    border-radius: 30px; /* forma ovalada */
+   left: 300px;
 }
