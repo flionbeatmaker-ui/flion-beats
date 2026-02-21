@@ -460,36 +460,7 @@ body {
 }
 
 /* Solo en celular */
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
-        color: white;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        background: #111;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        padding: 20px;
-        border-radius: 10px 0 0 10px;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    nav a {
-        margin-bottom: 15px;
-    }
-}
-/* ===== MENU MOVIL DESLIZABLE ===== */
+/* ===== MENU HAMBURGUESA MOVIL ===== */
 
 .menu-toggle {
     display: none;
@@ -506,12 +477,16 @@ body {
         font-size: 28px;
         cursor: pointer;
         color: white;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 1100;
     }
 
     nav {
         position: fixed;
         top: 0;
-        right: -250px;
+        right: -300px; /* oculto por defecto */
         width: 250px;
         height: 100vh;
         background: #111;
@@ -528,13 +503,18 @@ body {
     nav a {
         margin-bottom: 20px;
         font-size: 18px;
+        color: white;
+    }
+
+    nav a:hover {
+        color: #00f7ff;
     }
 
     .close-menu {
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 15px;
+        right: 15px;
         font-size: 22px;
         cursor: pointer;
         color: white;

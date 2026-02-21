@@ -94,13 +94,7 @@ document.addEventListener("contextmenu", function (e) {
 });
 
 const menuToggle = document.getElementById("menu-toggle");
-const navbar = document.querySelector("nav");
-
-if(menuToggle){
-    menuToggle.addEventListener("click", () => {
-        navbar.classList.toggle("active");
-    });
-}
+const navbar = document.getElementById("navbar");
 const closeMenu = document.getElementById("close-menu");
 
 if(menuToggle){
@@ -115,7 +109,7 @@ if(closeMenu){
     });
 }
 
-// Cerrar si toca fuera del menú
+// Cerrar menú al tocar fuera
 document.addEventListener("click", (e) => {
     if (
         navbar.classList.contains("active") &&
