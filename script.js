@@ -93,3 +93,24 @@ document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
 
+// ================= ORDENAR BEATS ALEATORIAMENTE =================
+function mezclarBeats() {
+  const container = document.querySelector(".beats-grid");
+  const beats = Array.from(container.children);
+
+  // Algoritmo Fisher-Yates
+  for (let i = beats.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [beats[i], beats[j]] = [beats[j], beats[i]];
+  }
+
+  // Vaciar contenedor
+  container.innerHTML = "";
+
+  // Volver a insertar mezclados
+  beats.forEach(beat => container.appendChild(beat));
+}
+
+// Ejecutar cuando cargue la página
+document.addEventListener("DOMContentLoaded", mezclarBeats);
+
