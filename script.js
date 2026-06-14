@@ -5,15 +5,16 @@ const beatCards = document.querySelectorAll(".beat-card");
 if (searchInput) {
   searchInput.addEventListener("input", () => {
     const filter = searchInput.value.toLowerCase();
+
     beatCards.forEach(card => {
-      card.style.display =
-        card.dataset.genero.toLowerCase().includes(filter)
-          ? "block"
-          : "none";
+      const nombre = card.querySelector("h3").textContent.toLowerCase();
+
+      card.style.display = nombre.includes(filter)
+        ? "block"
+        : "none";
     });
   });
 }
-
 // ================= REPRODUCTOR ÚNICO =================
 const players = document.querySelectorAll("audio");
 
